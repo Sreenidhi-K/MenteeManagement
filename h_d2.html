@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Mentee Management- Add
+        </title>
+        <link rel=stylesheet type="text/css" href="c_d1.css" >
+    
+    </head>
+
+    <body id="bbb">
+        
+        <div id="template">
+            
+            <h1> MENTEE MANAGEMENT </h1>
+            <a id="home_1" href="index.html"> HOME </a>
+            
+        
+        </div>
+        <h3> ADD and VIEW</h3>
+        
+        <form action=" " id="forms" >
+            <div id="nam1">
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <br>
+            
+            <fieldset id="ratem">
+                <legend>Rating:</legend>
+                    <div id="rating">
+                        <input type="radio" name="rate" id="r_1" value="1" >
+                        <label for="r_1"> 1 </label>
+                
+                        <input type="radio" name="rate" id="r_2" value="2">
+                        <label for="r_2"> 2 </label>
+                    
+                        <input type="radio" name="rate" id="r_3" value="3">
+                        <label for="r_3"> 3 </label>
+                        
+                        <input type="radio" name="rate" id="r_4" value="4">
+                        <label for="r_4"> 4 </label>
+                        
+                        <input type="radio" name="rate" id="r_5" value="5">
+                        <label for="r_5"> 5 </label>
+                      
+                    </div>
+   
+            </fieldset>
+            <br> 
+  
+            <div id="com1">
+                <label for="msg">Comments:</label>
+                <br>
+                <textarea id="msg" name="user_message"> </textarea>
+            </div>
+            
+            <div id="cont_but" >
+                <button type="button" id="button1"  > <b> Add </b> </button>
+                <button  type="button" id="button2" disabled=true > <b> Save changes </b></button>
+        
+            </div>
+            
+        </form>
+         
+        <br><br>
+        
+        <div id="view_men">
+            
+        <p id="list_click"> Click here to view list ! </p>
+        
+        </div>
+       
+        
+        <button id="b22" type="button"> SORT </button>
+        
+        
+        
+        <script src="j_d1.js"> </script>
+    
+    </body>
+</html>

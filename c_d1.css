@@ -1,0 +1,172 @@
+body
+{
+    background-color: black;
+    font-family: Century Gothic;
+    margin:0px;
+    
+}
+#template
+{
+    margin:0px;
+    background-color:greenyellow;
+    color:black;
+    height: 100px;
+    font-family: Century Gothic;
+}
+h1
+{
+    position: absolute;
+    left: 20px;
+}
+#add_1
+{
+position: absolute;
+right:200px;
+top: 50px;
+font-size: 20px;
+color: black;
+text-decoration: none;
+border-style: dotted;
+
+}
+#home_1
+{
+   position: absolute;
+right:200px;
+top: 50px;
+font-size: 20px;
+color: black;
+text-decoration: none;
+border-style: dotted;
+ 
+}
+
+
+h2
+{
+     position: absolute;
+    bottom: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 60px;
+}
+#foot
+{
+    position: absolute;
+    bottom: 1%;
+    left:35%;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+
+
+
+form
+{
+    position: absolute;
+    right: 800px;
+    border:none;
+    color: white;
+    font-size: 30px;
+    width:600px;
+    height: 600px;
+ 
+    
+}
+
+#name 
+{
+    width: 200px;
+    height: 50px;
+}
+#msg
+{
+    width: 300px;
+    height: 100px;
+}
+#button1
+{
+    width: 100px;
+    height: 30px;
+    border-style: solid;
+    background-color: lawngreen;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+#button2
+{
+   width: 200px;
+    height: 30px;
+    border-style: solid;
+    background-color: gray;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;  
+}
+
+#view_men
+{
+    position: absolute;
+    right:200px;
+    color: white;
+}
+h3
+{
+    color:white;
+    text-align: center;
+        font-size: 40px;
+}
+p
+{
+    border-style: dashed;
+    border-color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+#b22
+{
+    color:white;
+     border-style: groove;
+    border-color: white;
+    background-color: blueviolet;
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right:100px;
+    top:200px;
+}
+#del
+{
+   color:white;
+     border-style: groove;
+    border-color: white;
+    background-color: blueviolet;
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right:300px;
+    top:200px; 
+}
+#edit
+{
+  color:white;
+     border-style: groove;
+    border-color: white;
+    background-color: blueviolet;
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right:500px;
+    top:200px;   
+}
