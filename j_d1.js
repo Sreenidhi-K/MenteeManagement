@@ -48,8 +48,9 @@ function viewm(){
                     
                     var p= document.createElement("p");
                     p.setAttribute("id",loc_arr[i].n);
+                    p.setAttribute("white-space","pre-wrap");
                     p.setAttribute("class","box_info");
-                    p.textContent=loc_arr[i].n +" --- "+loc_arr[i].rate+" --- "+ loc_arr[i].other;
+                    p.textContent=loc_arr[i].n+" ---- "+loc_arr[i].rate;
                     if(loc_arr[i].rate==1) p.setAttribute("style","background-color:red");
                     else if(loc_arr[i].rate==2)p.setAttribute("style","background-color:palevioletred");
                     else if(loc_arr[i].rate==3)p.setAttribute("style","background-color:goldenrod");
@@ -124,8 +125,9 @@ document.getElementById("b22").addEventListener("click",  function sortit(){
                 {
                     var p= document.createElement("p");
                     p.setAttribute("id",loc_arr[i].n);
+                     p.setAttribute("white-space","pre-wrap");
                     p.setAttribute("class","box_info");
-                    p.textContent=loc_arr[i].n +" --- "+loc_arr[i].rate+" --- "+ loc_arr[i].other;
+                    p.textContent=loc_arr[i].n +" ---- "+loc_arr[i].rate;
                     if(loc_arr[i].rate==1) p.setAttribute("style","background-color:red");
                     else if(loc_arr[i].rate==2)p.setAttribute("style","background-color:palevioletred");
                     else if(loc_arr[i].rate==3)p.setAttribute("style","background-color:goldenrod");
@@ -192,8 +194,26 @@ function expand()
 function large(e)
 {
     e.preventDefault();
-    id_new=this.id;
-    console.log(id_new);
+     var box_list=document.getElementsByClassName("box_info");
+    for(var i=0;i<box_list.length;i++)
+        {
+            var iddo= box_list[i].id;
+            var y= localStorage.getItem(iddo);
+            var rate= y[0];
+             y= y.substr(0, 0) + ' ' +y.substr(1);
+            box_list[i].textContent=iddo+" ---- "+rate;
+            
+        }
+    var para = this;
+   // viewm();
+    console.log(para.id);
+    var other_1=localStorage.getItem(para.id);
+     var rate_1=other_1[0];
+    other_1= other_1.substr(0, 0) + ' ' +other_1.substr(1);
+    
+    para.textContent=para.textContent+"\n"+other_1;
+    
+     console.log(para.textContent);
     
 }
 //edit func
@@ -204,9 +224,6 @@ function go_edit()
         {
             edit_list[i].addEventListener("click",call_edit,false);
               
-                
-                
-          
         }
     
 }

@@ -114,6 +114,7 @@ form
 #view_men
 {
     position: absolute;
+    white-space: pre-wrap;
     right:200px;
     color: white;
 }
